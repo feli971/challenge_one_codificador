@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <a href="https://www.aluracursos.com/" target="_blank"><img src="../img/Vector (1).png"alt="Logo" class="navbar-img"></a>
+                    <a href="https://github.com/feli971" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png" alt="Logo GitHub" class="navbar-git"></a>
+                </div>
+            </nav>
+        </header>
+    <main>     
+    <section class ="left">
+        <textarea class="text-area" id="input-text" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="button-cont">
+                        <span class="info" id="information"><img src="../img/Vector (2).png" alt="informacion" class="alerta">Solo letras minusculas y sin acento</span>
+                        <input type="button" class="encrypt" type ="submit" id ="btn-encrypt"value="Encriptar">
+                        <input type="button" class="unencrypt" type ="submit"id ="btn-unencrypt" value="Desencriptar">
+                    </div>
+    </section>
+    <section class="right">
+            <img src="../img/Muñeco.png" alt="muñeco alura" class="muneco">
+                <label for="mensaje-texto">Mensaje encriptado:</label>
+                    <textarea class="text-input" name="mensaje-texto" id="mensaje-texto"rows="10" cols="40"></textarea>              
+                <div class="btn-copy-footer">
+                    <input class="button-copy" type="submit" value="Copiar texto" id="btn-copy">
+                </div>
+    </section>
+    </main> 
+<script src="index.js"></script>
+</body>
+</html>
